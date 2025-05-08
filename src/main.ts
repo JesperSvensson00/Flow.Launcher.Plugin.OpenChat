@@ -15,7 +15,7 @@ const { on, showResult, run, settings } = new Flow<Methods, Settings>(
 
 on("query", async (params: FlowParameters) => {
   showResult({
-    title: "Open Chat",
+    title: "Enter a prompt and press Enter",
     subtitle: `Prompt: ${params}`,
     method: "open",
     params: [params, settings.chatUrl ?? "https://chatgpt.com/?prompt="],
